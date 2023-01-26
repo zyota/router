@@ -1,0 +1,20 @@
+.home {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  min-width: 80vh;
+  background-color: lightskyblue;
+}
+.product,
+.product-mid {
+  display: flex;
+}
+.product {
+  width: 100%;
+}
+.product-mid {
+  font-size: 10px;
+}
+.product img {
+  width: 10%;
+}

@@ -1,0 +1,17 @@
+.sidemenu {
+    padding: 40px;
+    /* display: flex;
+    align-items: center; */
+    width: 20%;
+    min-height: 80vh;
+    background-color: pink;
+}
+
+.btns button {
+    margin: 10px 0;
+    width: 100px;
+    height: 30px;
+    display: block;
+    border: none;
+    border-radius: 20px;
+}
