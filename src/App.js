@@ -16,8 +16,8 @@ function App() {
       <div className="content">
         <SideMenu />
         <Routes>
-          <Route path={MENUS[0].url} element={<Products />} />
-          <Route path={MENUS[1].url} element={<Home />} />
+          <Route path={MENUS[0].url} element={<Home />} />
+          <Route path={MENUS[1].url} element={<Products />} />
           <Route path={MENUS[2].url} element={<Users />} />
         </Routes>
       </div>

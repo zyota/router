@@ -3,16 +3,3 @@
   margin: 0;
   padding: 0;
 }
-.product,
-.product-mid {
-  display: flex;
-}
-.product {
-  width: 100%;
-}
-.product-mid {
-  font-size: 10px;
-}
-.product img {
-  width: 10%;
-}
