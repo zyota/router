@@ -5,15 +5,3 @@
   min-width: 80vh;
   background-color: lightskyblue;
 }
-.product,
-.product-mid {
-  display: flex;
-}
-.product {
-  width: 100%;
-}
-.product-mid {
-}
-.product img {
-  width: 10%;
-}

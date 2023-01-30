@@ -4,17 +4,31 @@ import "../styles/product.css";
 export default function Product(prop) {
   const { data } = prop;
   console.log("product: ", prop);
-  return (
-    <div className="product">
-      <div className="product-image">
-        <img src={data.image} alt="img" />
-      </div>
-      <div className="product-mid">
-        <h2>{data.name}</h2>
-        <p>price: {data.price}</p>
-        <p>stock: {data.stock}</p>
-        <p>category: {data.category}</p>
-      </div>
-    </div>
-  );
+
+  return data.map((product) => {
+    return (
+      <tr className="product">
+        <td>
+          <img src={product.image} alt="img" />
+        </td>
+        <td>
+          <h3>{product.name}</h3>
+        </td>
+        <td>
+          <p>{product.price}</p>
+        </td>
+        <td>
+          <p>{product.stock}</p>
+        </td>
+        <td>
+          <p>{product.category}</p>
+        </td>
+        <td>
+          <p> {product.sale}</p>
+        </td>
+
+        <button>Засах</button>
+      </tr>
+    );
+  });
 }
