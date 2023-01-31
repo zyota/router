@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import axios from "axios";
 import Product from "../components/Product";
 import "../styles/products.css";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+// import Button from "react-bootstrap/Button";
+// import Modal from "react-bootstrap/Modal";
 
 export default function Products() {
   const [products, setProducts] = useState("");
@@ -14,6 +14,7 @@ export default function Products() {
     );
   }, []);
   console.log("Home Products: ", products);
+  function addButtonHandler() {}
   return (
     <div className="products">
       <div>
