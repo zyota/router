@@ -3,11 +3,13 @@ import { useEffect } from "react";
 import axios from "axios";
 import Product from "../components/Product";
 import "../styles/products.css";
-// import Button from "react-bootstrap/Button";
-// import Modal from "react-bootstrap/Modal";
+import addButton from "./subComp/addButton";
 
 export default function Products() {
   const [products, setProducts] = useState("");
+  const [show, setShow] = useState();
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   useEffect(() => {
     axios("http://localhost:2020/products").then((data) =>
       setProducts(data.data)
@@ -18,10 +20,10 @@ export default function Products() {
   return (
     <div className="products">
       <div>
-        <button>Add</button>
+        <addButton />
       </div>
       <table>
-        <thead>
+        {/* <thead>
           <tr>
             <th>image</th>
             <th>image</th>
@@ -31,7 +33,7 @@ export default function Products() {
             <th>image</th>
             <th>image</th>
           </tr>
-        </thead>
+        </thead> */}
         <tbody>
           {products
             ? products.map((product, index) => {
