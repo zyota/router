@@ -5,5 +5,9 @@ import Product from "../components/Product";
 import "../styles/home.css";
 
 export default function Home() {
-  return <div className="home">Home</div>;
+  return (
+    <div className="home">
+      <Product />
+    </div>
+  );
 }
