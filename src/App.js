@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { MENUS } from "./util/data";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import Header from "./components/Header";
 import SideMenu from "./components/SideMenu";
