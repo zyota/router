@@ -1,7 +1,11 @@
 .header {
   padding-left: 40px;
   display: flex;
-  align-items: center;
+  justify-content: space-around;
   height: 60px;
+  width: 100%;
+}
+.header input {
+  max-width: 747px;
   width: 100%;
 }

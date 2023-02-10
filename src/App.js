@@ -7,7 +7,7 @@ import SideMenu from "./components/SideMenu";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Users from "./pages/Users";
-import { useEffect } from "react";
+import { useEffect, createContext } from "react";
 import axios from "axios";
 
 function App() {
